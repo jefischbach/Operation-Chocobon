@@ -18,6 +18,8 @@ TP d'Intelligence Artificielle - Implantation du TD sous Java avec la lib Choco
 
 Faire un nouveau projet:  `File -> New Project -> Java | Java Application`
 
+Par souci que j'ai la flemme d'utiliser git correctement (et de faire des phrases jolies) j'upload uniquement les fichier sources .java, qui se trouvent normalement dans `~/NetBeansProjects/Exo1Monnaie/src/exo1monnaie` (par exemple)
+
 Importer la lib choco: Ouvre le menu déroulant du projet (à gauche) en cliquant sur le triangle, clic droit sur Libraries et Add Library. Bien penser à ajouter choco-solver-4.0.8.jar **et** choco-solver-4.0.8-sources.jar (qui permet d'avoir accès à la javadoc quand tu codes).
 
 Petits tips qui vont bien:
