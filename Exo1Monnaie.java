@@ -74,7 +74,7 @@ public class Exo1Monnaie {
         model.post(contrainteValeurs);
         model.post(contrainteQt);
         
-        Solution solution = model.getSolver().findOptimalSolution(quantiteTotale, false);
+        Solution solution = model.getSolver().findOptimalSolution(quantiteTotale, false); // false pour minimiser, true pour maximiser
         if(solution != null){
             if (solution.getIntVal(nbE2) > 0){
                 System.out.println("Pièces de 2€ : "+solution.getIntVal(nbE2));
