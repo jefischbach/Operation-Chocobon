@@ -45,51 +45,51 @@ public class Exo2Coloriage {
         avec ce modèle, cela revient à une liste de comparaisons d'entiers en s'assurant qu'ils soient différents si les zones concernées doivent être adjacentes.
         */
         
-        model.post(model.notAllEqual(z1,z7));
-        model.post(model.notAllEqual(z1,z9));
-        model.post(model.notAllEqual(z1,z10));
-        model.post(model.notAllEqual(z1,z11));
-        model.post(model.notAllEqual(z1,z12));
-        model.post(model.notAllEqual(z1,z13));
+        model.post(model.allDifferent(z1,z7));
+        model.post(model.allDifferent(z1,z9));
+        model.post(model.allDifferent(z1,z10));
+        model.post(model.allDifferent(z1,z11));
+        model.post(model.allDifferent(z1,z12));
+        model.post(model.allDifferent(z1,z13));
         
-        model.post(model.notAllEqual(z2,z8));
-        model.post(model.notAllEqual(z2,z12));
-        model.post(model.notAllEqual(z2,z14));
+        model.post(model.allDifferent(z2,z8));
+        model.post(model.allDifferent(z2,z12));
+        model.post(model.allDifferent(z2,z14));
         
-        model.post(model.notAllEqual(z3,z7));
-        model.post(model.notAllEqual(z3,z10));
-        model.post(model.notAllEqual(z3,z14));
+        model.post(model.allDifferent(z3,z7));
+        model.post(model.allDifferent(z3,z10));
+        model.post(model.allDifferent(z3,z14));
         
-        model.post(model.notAllEqual(z4,z9));
-        model.post(model.notAllEqual(z4,z11));
-        model.post(model.notAllEqual(z4,z14));
+        model.post(model.allDifferent(z4,z9));
+        model.post(model.allDifferent(z4,z11));
+        model.post(model.allDifferent(z4,z14));
         
-        model.post(model.notAllEqual(z5,z8));
-        model.post(model.notAllEqual(z5,z11));
-        model.post(model.notAllEqual(z5,z12));
+        model.post(model.allDifferent(z5,z8));
+        model.post(model.allDifferent(z5,z11));
+        model.post(model.allDifferent(z5,z12));
         
-        model.post(model.notAllEqual(z6,z7));
-        model.post(model.notAllEqual(z6,z13));
-        model.post(model.notAllEqual(z6,z14));
+        model.post(model.allDifferent(z6,z7));
+        model.post(model.allDifferent(z6,z13));
+        model.post(model.allDifferent(z6,z14));
         
-        model.post(model.notAllEqual(z7,z10));
-        model.post(model.notAllEqual(z7,z13));
-        model.post(model.notAllEqual(z7,z14));
+        model.post(model.allDifferent(z7,z10));
+        model.post(model.allDifferent(z7,z13));
+        model.post(model.allDifferent(z7,z14));
         
-        model.post(model.notAllEqual(z8,z12));
+        model.post(model.allDifferent(z8,z12));
         
-        model.post(model.notAllEqual(z9,z10));
-        model.post(model.notAllEqual(z9,z11));
-        model.post(model.notAllEqual(z9,z14));
+        model.post(model.allDifferent(z9,z10));
+        model.post(model.allDifferent(z9,z11));
+        model.post(model.allDifferent(z9,z14));
         
-        model.post(model.notAllEqual(z10,z14));
+        model.post(model.allDifferent(z10,z14));
         
-        model.post(model.notAllEqual(z11,z12));
+        model.post(model.allDifferent(z11,z12));
         
-        model.post(model.notAllEqual(z12,z13));
-        model.post(model.notAllEqual(z12,z14));
+        model.post(model.allDifferent(z12,z13));
+        model.post(model.allDifferent(z12,z14));
         
-        model.post(model.notAllEqual(z13,z14));
+        model.post(model.allDifferent(z13,z14));
         
         Solution solution = model.getSolver().findSolution();
         if(solution != null){
